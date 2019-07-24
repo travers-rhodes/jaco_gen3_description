@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro"
+       name="jaco_gen3" >
+
+  <!-- the published robot -->
+  <xacro:include filename="$(find kortex_description)/urdf/JACO3_URDF_V11.urdf" />
+
+  <!-- gazebo transmission -->
+  <xacro:include filename="$(find jaco_gen3_description)/urdf/jaco_gen3.transmission.xacro" />
+  
+  <!-- gazebo library -->
+  <xacro:include filename="$(find jaco_gen3_description)/urdf/jaco_gen3.gazebo.xacro" />
+
+</robot>
